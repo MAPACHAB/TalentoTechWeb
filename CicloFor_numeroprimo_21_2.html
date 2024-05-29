@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+//implementar un algoritmo que determine si el nuero ingresado es primo
+
+    var num = parseInt(prompt("Ingrese un número:"))
+    var divisores =0
+        for (var i=1 ; i<= num; i++){
+        if (num % 1 === 0 ){
+            divisores++
+        }
+    }
+        if (divisores>2){
+            document.write(" El numero NO es primo ")
+        }else{
+            document.write("El numero es primo ")
+        } 
+
+
+
+
+</script>
+</html>

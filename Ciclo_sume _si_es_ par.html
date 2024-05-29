@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+//crear algoritmo que me solicite un numero, y lo sume solo si es par
+//dejara de solictar cuando se ingrese el numero cero
+    var suma = 0 // acumula la suma
+    var numero
+    while (numero != 0){
+        numero = parseFloat(prompt("Ingrese el numero:" ))
+        document.write(numero + "<br>")
+        if (numero%2 == 0){
+            suma = suma+numero
+        }
+     }
+     document.write("la sumas es: " + suma)
+</script>
+
+</html>

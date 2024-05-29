@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+//Implementar un algoritmo que reciba un numero e imprima de sus numeros anteriores mayores que CERO
+//cuales con pares y cuales impares y cueles multiplo de 3
+        var numero = parseInt(prompt("Ingrese un número:"));
+        for (var i = numero; -i> 0; i--){
+        if (i % 2 == 0 ){
+            document.write (i + " es par");
+        }else{
+            document.write(i + " es Impar")
+        }
+        if (i % 3 == 0){
+            document.write(i + " es múltiplo de 3");
+        } 
+    }
+
+
+
+     //  var numero = parseInt(prompt("Ingrese un número:"));
+     //   for (var i = numero - 1; i > 0; i--) {
+     //   if (i % 2 === 0 && i % 3 === 0) {
+    //        document.write (i + " es par y múltiplo de 3");
+     //   } else if (i % 2 === 0) {
+    //        document.write(i + " es par");
+    //    } else if (i % 3 === 0) {
+    //        document.write(i + " es múltiplo de 3");
+    //    } else {
+    //        document.write(i + " es impar");
+    //    }
+   // }
+
+
+
+</script>
+</html>

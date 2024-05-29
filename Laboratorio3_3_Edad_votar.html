@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    //Ejercicio 3: Validar la edad para votar
+    //Escribe un programa que solicite la edad del usuario 
+    //y luego imprima un mensaje indicando si la persona es 
+    //mayor de edad (18 años o más) y puede votar./
+    
+    var edad = parseInt(prompt("Ingrese su edad: "))
+    var mayorDeEdad = edad >= 18 
+    document.write("¿Es mayor de edad?:" + "<br>"+ mayorDeEdad)
+    var nacionalidad = prompt("Ingrese la nacionalidad: ")
+    var puedeVotar = edad >= 18 || nacionalidad == "Colombiano"
+    document.write("<br>" +"¿Puede votar?"+ "<br>" + puedeVoar)
+</script>
+</html>

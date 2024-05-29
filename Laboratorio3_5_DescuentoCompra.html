@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+ //Ejercicio 5: Calcular descuento en una compra
+//Escribe un programa que solicite el monto de una compra y
+//luego aplique un descuento del 10% si el monto es mayor a $100.
+var compra = parseFloat(prompt("Ingrese el valor de la compra: "))
+    var descuento = 0
+           if(compra >= 100){
+            descuento = 0.1*compra
+           }else{
+            document.write("Su compra no tiene descuento porque es menor de 100 pesos. "+ "<br>")
+        }
+        document.write("El descuento en su compra es  de $"+ descuento)
+
+
+</script>
+</html>

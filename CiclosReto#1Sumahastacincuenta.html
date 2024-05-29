@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+/* Reto #1 - Suma hasta cincuenta
+ Crea una variable que se llame total, 
+ después pide a tu usuario que ingrese un número y lo sume al valor de total. 
+ Haz que esto se repita hasta que el valor de total sea mayor a 50 y muestra el 
+ resultado en pantalla. */
+
+        var total = 0 //es donde se aumula e inicia en cero
+        while (total <= 50){
+        var numero = parseInt(prompt("Ingrese el numero: ")) // parseIn cuando usamos numeros enteros y el float diceimales y solo texto usamos promt 
+        document.write(numero  + "<br>") 
+        total = total+numero
+        }
+        document.write("El Resultado es: " + total) //se imprimer fuera para que solo muestre el resultado
+
+</script>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+/**
+     * Reto #3 - Sumas consecutivas
+        Pide al usuario que ingrese dos números y los sume. 
+        Después pregunta si quiere añadir otro número: si la respuesta es afirmativa añádelo al total; 
+        en caso contrario finaliza el ciclo y muestra el resultado total en pantalla.
+    */
+
+        var num1 = parseInt(prompt("Ingrese el numero  uno : "))
+        var num2 = parseInt(prompt("Ingrese el numero dos: "))
+        var total = num1+num2
+        var nuevoNumero = prompt(" Quiere Ingrese otro numero: ")
+
+        while(nuevoNumero == "SI"){
+            var nuevoNumero = prompt(" Ingrese el nuevo numero: ")
+            total = num1+num2
+            nuevoNumero = prompt(" Quiere Ingrese otro numero: ")
+        }
+        document.write("El total es : "  + total)
+
+
+</script>
+</html>

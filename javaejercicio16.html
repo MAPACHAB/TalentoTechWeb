@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+// mayoria de edad 
+   //var edad = parseInt(prompt("Ingrese la edad: "))
+  // var mayordeEdad = edad >= 18 //logico
+  //document.write ("¿Es mayor de edad?: ?" + mayordeEdad)
+
+    // implementar un algoritmo que reciba una nota e imprima 
+    //true si la nota es mayor o igual a 3 o false se es menor 
+    //var nota = parseInt(prompt("Ingrese la nota: "))
+   // const NOTA_APROBATORIA = 3.0
+   // var aprobo = nota >= NOTA_APROBATORIA
+  //  document.write (" APROBO?"  + aprobo)
+
+
+    /**Implementar un otgoritmo que imprima true si el numero ingresado
+     *ingresado es PAR o false si no lo es */ 
+    // Para comentar podemos: deleccionamos y usamos ctrl{ 
+
+   // var numero = parseFloat(prompt( "ingrese el numero: "))
+  //  var residuo = numero%2
+ //   var par = residuo == 0
+  //  document.write("¿ El numero  " + numero +" es par? " + par)
+
+
+
+  //Implementar un algoritmo que me permita determinar si una persona es apta para votar 
+  //deber ser colombian y mayor de edad
+
+       // var edad = parseInt(prompt(" ingrese la edad: " ))
+        //var nacionalidad = parseInt(prompt(" ingrese la nacionalidad: " ))
+       
+        //               true           true
+       // var puedevotar = edad >= 18 && nacionalidad == "Colombiano"
+       // document.write( "¿ Puede votar? " + puedevotar)
+        
+        //               false              false
+        //var puedevotar = edad >= 18 ║ nacionalidad == "Colombiano"
+       // document.write( "¿ Puede votar? " + puedevotar)
+
+     //Dar un subsidio unicamente para los ciudadadnos que no son colombianos    
+        //  var nacionalidad = prompt(" Ingrese su nacionalidad: " )
+       //   var esColombiano = nacionalidad == "Colombiano" 
+        //  var aptoSubsidio = !esColombiano //debe estar unido el signo ! a la variable
+        // document.write( "¿ Puede recibir subsidio ? " + aptoSubsidio)
+    
+
+    //Determinar si un numero ingresado es > 1 Y < 100 // Conjuncion
+
+    //var numero = parseInt(prompt(" Ingrese numero: " ))
+    //var nunMayorqueunomenorque100 = numero > 1 && numero < 100     
+    //document.write( "el numero es mayor que 1 y menor que 100? " + nunMayorqueunomenorque100)
+
+
+    //Ingresar una nota y numero de asistencias. Determinar si un estudiante aprueba 
+    //teniendo en cuenta que se aprueba  con una nota superioir o igual a 3.0 Y minimo 60 asistencias //disyuncion
+    var nota = parseFloat(prompt(" Ingrese su nota: " ))
+    var asistencia = parseFloat(prompt(" Ingrese asistencia: " ))
+    var aprueba = nota >= 3 && asistencia >= 60
+    document.write( "el numero >Esl estudiate aprobo? " + aprueba)
+
+
+
+    // Ingresando una estacion determinar si es tiempo de sembrar teniendo encuanta que solo 
+    //se puede sembrar en verano u otoño 
+
+        var estacion = prompt(" Ingrese sestación : " )
+         var tiempodesembrar = estacion ==  "verano" ║ estacion == " otoño "
+        document.write("es tiempo de sembrar? " + tiempodesembrar)
+
+    // Ingresando un animal determinar si es Domestico, teniendo en cuenta que solo los gatos, perros o pajaros 
+    //son domesticos  //disyuncion O 
+         var animal = prompt(" Ingrese animal : " )
+         var esDodomestico = animal ==  "gato" ║ animal == "perro" ║ animal "pajaro"
+        document.write("es tiempo de sembrar? " + esDodomestico)
+
+
+</script>
+</html>

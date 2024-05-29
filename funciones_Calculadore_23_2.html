@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //Implementar una calculadora usando funciones 
+ /*   function suma (num1, num2){
+        return num1+num2
+    }
+    function resta (num1, num2){
+        return num1-num2
+    }
+    function multiplicacion(num1, num2){
+        return num1*num2
+    }
+    function division(num1, num2){
+        return num1%num2
+    }
+    var n1 parseInt(prompt(" Ingrese el numero 1: "))
+    var n2 parseInt(prompt(" Ingrese el numero 2: "))
+    var operacion= prompt(" Ingrese la operación: ")
+    var resultado = 0
+
+    switch(operacion){
+    case "Suma":
+        resultado = suma(n1, n2)
+        break;
+    case "Resta":
+        resultado = resta(n1, n2)
+        break;
+    case "Multiplicación":
+        resultado = multiplicacion(n1, n2)
+        break;
+    case "División":
+        resultado = division(n1, n2)
+        break;
+    }
+    documet.write("el resultado de la " + operacion + " es: " + resultado)*/
+
+// crear una funcion que reciba un dia del mes y me diga a cual mes pertenece
+    function validarMes(numero){
+    var mes= " "
+    switch(numero){
+        case 1:
+            mes="ENERO"
+            break;
+        case 2:
+            mes="FEBRERO"
+            break;
+        case 3:
+            mes="MARZO"
+            break;
+        case 4:
+            mes="ABRIL"
+            break;
+        case 5:
+            mes="MAYO "
+            break;
+        case 6:
+           mes="JUNIO"
+            break;
+        case 7:
+            mes="JULIO"
+            break;
+        case 8:
+            mes="AGOSTO"
+            break;
+        case 9:
+            mes="SEPTIEMBRE"
+            break;
+        case 10:
+            mes="OCTUBRE"
+            break;
+        case 11:
+            mes="NOVIEMBRE "
+            break;
+        case 12:
+            mes="DICIEMBRE"
+            break;
+        }
+    return mes
+    }
+    // llamado
+    document.write(validarMes(1))
+    document.write(validarMes(3))
+    document.write(validarMes(8))
+    document.write(validarMes(10))
+    document.write(validarMes(12))
+</script>
+</html>

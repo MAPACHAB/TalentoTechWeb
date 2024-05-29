@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table style="background-color: aqua;">
+<tr style="background-color: blueviolet;"> 
+    <th style="background-color: rgb(43, 144, 226); color: blue;">Nombre</th>
+    <th style="background-color: rgb(35, 146, 31); color: rgb(255, 145, 0);"> Correo</th>
+    <th style="background-color: rgb(226, 43, 113); color: rgb(223, 223, 235);"> Ciudad</th>
+    <th style="background-color: rgb(226, 131, 43); color: rgb(13, 13, 143);"> Edad</th>
+    <th>Profesión</th>
+</tr>
+   <tr>
+        <td> Mariana Lopez</td>
+        <td>correo@gmail</td>
+        <td> Bogotá</td>
+        <td>25</td>
+        <td>Ingeniero</td>
+    </tr>
+    <tr>
+        <td> Juan Perez</td>
+        <td>Correo@gmail</td>
+        <td>Cartagena</td>
+        <td>16</td>
+        <td>Médico</td>
+    </tr>
+    <tr>
+        <td>Edward Castro</td>
+        <td>correo@gmail</td>
+        <td>Cucuta</td>
+        <td> 12</td>
+        <td>Abogado</td>
+    </tr>
+    <tr>
+        <td> Liza Rojas</td>
+        <td>Correo@gmail</td>
+        <td> Bogotá</td>
+        <td>15</td>
+        <td>Ingeniera Ambiantal</td>
+    </tr>
+    <tr>
+        <td>Juana Rincon</td>
+        <td>Correo@gmail</td>
+        <td> Leticia</td>
+        <td>22</td>
+        <td>Técnico Calificado</td>
+    </tr>
+    <tr>
+        <td>Victoria Torres</td>
+        <td>Correo@gmail</td>
+        <td>Sogamoso</td>
+        <td>18</td>
+        <td>Actriz</td>
+    </tr>
+    <tr>
+        <td>Julian Castro</td>
+        <td>Correo@gmail</td>
+        <td> Neiva</td>
+        <td>30</td>
+        <td>Economista</td>
+    </tr>
+    <tr>
+        <td>Ximena Beltran</td>
+        <td>Correo@gmail</td>
+        <td> Cali</td>
+        <td>17</td>
+        <td>Administradora</td>
+    </tr>
+    <tr>
+        <td>Sebastian Alarcon</td>
+        <td>Correo@gmail</td>
+        <td> Ssnta Martha </td>
+        <td>40</td>
+        <td> Enfermero</td>
+    </tr>
+    <tr>
+        <td>Angie Garzon</td>
+        <td>Correo@gmail</td>
+        <td> Pasto</td>
+        <td>35</td>
+        <td>Arquitecto</td>
+    </tr>
+    </table>
+    <!-- formulario -->
+<form method="POST">
+    <!--Campo de texto  -->
+    <label for="">Nombre</label>
+    <input type="text" placeholder= " Escriba Nombre" requiered name="Nombre">
+    <!--Salto de línea-->
+    <br>
+    <!-- Campo Fecha -->
+    <label for="">Fecha de nacimiento</label>
+    <input type="date" required max="2024-05-02" 
+            min="1900-01-01" value="2024-05-02">
+    <br>
+     <!--Campo de numerico  -->
+     <label for="">Ingreso Mensual</label>
+     <input type="number" placeholder= "Ingrese salario" requiered name="Salario">>
+     <!--Salto de línea-->
+     <br>
+    <!--Campo de Email  -->
+    <label for="">Correo Electronico</label>
+    <input type="email" placeholder= "Ingrese correo" requiered autofocus name="Mail">>>
+    <!--Salto de línea-->
+    <br>
+     <!--Campo de archivo  -->
+     <label for="">Subir CV</label>
+     <input type="file" placeholder= "adjunte su CV" requiered name="Hoja_de_vida">
+     <!--Salto de línea-->
+     <br>
+     <!--Campo password  -->
+     <label for="">password</label>
+     <input type="password" requiered placeholder= >
+     <!--Salto de línea-->
+     <br>
+     <!--Campo hora  -->
+     <label for="">Hora de Ingreso</label>
+     <input type="time" requiered>
+     <!--Salto de línea-->
+     <br>
+      <!--Campo mes  -->
+      <label for="">Mes de ingreso a la Empresa</label>
+      <input type="month" requiered placeholder="Ingrese el mes" name="Mes">
+      <!--Salto de línea-->
+      <br>
+      <!--Campo Color  -->
+      <label for="">Color del Unforme</label>
+      <input type= "color" requiered name=" Color Uniforme"> <br>
+      <!--Salto de línea-->
+      <br>
+       <!--Campo Radio  -->
+       <label for="">Genero</label>
+       <input type="radio" name="Genero" value="Femenino" requiered placeholder="Ingrese el genero">
+       <input type="radio" name="Genero" value="Masculino" requiered placeholder="Ingrese el genero">
+       <label for="">Masculino</label>
+       <!--Salto de línea-->
+       <br>
+       <!--Campo Checkbox  -->
+       <label for="">Dias Laborados</label>
+       <input type="checkbox" name="días" value="Lunes" > 
+       <label for="">Lunes</label>
+       <input type="checkbox" name="días" value="Martes" > 
+       <label for="">Martes</label>
+       <input type="checkbox" name="días" value="Miercoles" > 
+       <label for="">Miercoles</label>
+       <input type="checkbox" name="días" value="Jueves" > 
+       <label for="">Jueves</label>
+       <input type="checkbox" name="días" value="Viernes" > 
+       <label for="">Viernes</label>
+       <!--Campo URL  -->
+       <label for="">perfil de Likedin</label>
+       <input type="url" requiered name="Likedin">>> 
+       <!--Salto de línea-->
+       <br>
+       <!--Campo teléfono  -->
+       <label for="">Teléfono</label>
+       <input type="tel" requiered name="Teléfono"> 
+       <!--Salto de línea-->
+       <br>
+       <!-- Selector -->
+       <label for="">Escoja una ciudad</label>
+       <select name="" id="" requiered name="Ciudad">
+           <option value="">-</option>
+           <option value="Manizales">Manizales</option>
+           <option value="Bogota">Bogota</option>
+           <option value="Cali">Cali</option>
+       </select> <br>
+       <!-- Fieldset -->
+       <fieldset>
+           <legend>Informacion General</legend>
+           <!-- Text Area -->
+           <label for="">Descripcion del Perfil</label>
+           <textarea name="" id="" cols="50" rows="5" name="descripción"></textarea> <br>
+           <label for="">Tipo documento</label>
+           <input list="documento" name="documento">
+           <!-- Datalist -->
+           <datalist id="documento">
+               <option value="Cedula">Cedula</option>
+               <option value="Tarjeta de Identidad">Tarjeta de Identidad</option>
+               <option value="Pasaporte">Pasaporte</option>
+           </datalist> <br>
+           <label for="">Cedula</label>
+           <input type="text" name="Cédula">
+       </fieldset>
+       <!-- Button -->
+       <button>Enviar</button>
+   </form>
+</body>
+</html>

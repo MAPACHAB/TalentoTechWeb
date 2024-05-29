@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+/**
+     * Reto #5 - “Un elefante se balanceaba…”
+        Escribe un programa que inicie mostrando en pantalla la letra de “Un elefante se balanceaba” 
+        iniciando con el número 1, 
+        después pregunta al usuario cuantos elefantes más se balancearán y 
+        debe responder un número más al mostrado. 
+        En caso de ingresar un número diferente pedirle que intente de nuevo y repetir el ciclo hasta tener 10 elefantes.
+        Tomar en cuenta cuando el texto muestra un solo elefante  y varios elefantes*/
+
+        var texto = " Un Elefante se balanceba sobre la tela de una araña , como veian que resistia llamaron otro elefante"
+        var elefantes = parseInt(prompt( " Ingrese los Elefantes "))
+        var contador =1 
+        var textoElefante = "Elefante"
+        while (contador <= 10 ){
+            if (contador != 1) {
+                textoElefante = "Elefantes"
+            }           
+            document.write (contador +  "  " + textoElefante + " " + texto +"<br>" ) //para que no muestr todos podemos colocar esta parte fuera del while
+            contador ++
+        }
+
+</script>
+</html>

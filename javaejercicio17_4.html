@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+// implementar un atgoritmo que reciba 2 numeros y una operacion, validad por el nombre  de la 
+// operacion cual se debe realizra y mastar en pantalla el resultado obtenido
+  //  var num1 = parseFloat(prompt( " ingrese el numero 1: "))
+ //   var num2 = parseFloat(prompt( " ingrese el numero 1: "))
+ //   var operacion = prompt( " ingrese operación a realizar")
+  //  var resultado = 0
+ //   if (operacion == "Suma"){
+ //          resultado = num1+num2
+ //   }else if (operacion == "Resta"){
+ //         resultado = num1-num2
+ //   }else if (operacion == "Multiplicación"){
+//        resultado = num1*num2
+ //   }else if (operacion =="División"){
+ //       resultado = num1/num2
+ //   }else
+    //potenciacion y el residuo
+  //      document.write ("el resultado de la " + operacion +  "es:" + resultado)
+
+
+
+    // Implementar un algoritmo que reciba una nota si la nota
+    //si la nota en menor 3 imprima "I"
+    //si la nota en mayor o igual a 3 y menor que 4 imprima "A"
+     //si la nota en mayor o igual a 4 y menor que 5 imprima "S"
+     //si la nota es igual a 5 imprima "E"
+     // tener en cuenta que solo se puede imprimir notas entre 0 y 5 
+
+       /* var nota = parseFloat(prompt( " Ingrese nota: "))
+        var letra = " "
+        if (nota >= 0 && nota < 3){
+           letra = "I"
+        }else if (nota >=3 && nota < 4){
+          letra = "A"
+        }else if (nota >=4 && nota <5){
+        letra = "S"
+        }else if(nota = "5"){
+        letra = "E"
+        }else{
+          document.write("la nota no es valida:")
+         }
+        
+         if (letra != ""){
+            document.write ("la nota asociada a la nota es:" + letra)
+        }*/
+
+
+        // swich 
+        // Dado el numero de un mes devolver el nombre 
+
+        var numeroMes = parseInt(prompt(" Ingrese el numero del mes: "))
+        var nombreMes = " " //vacio
+        if(nombreMes > 0 && nombreMes <=12){
+        switch(nombreMes){
+            case 1: 
+                nombreMes = " Enero"
+                break;
+            case 2: 
+                nombreMes = " Febrero"
+                break;
+            case 3: 
+                nombreMes = " Marzo"
+                break;
+            case 4: 
+                nombreMes = " Abril"
+                break;
+            case 5: 
+                nombreMes = " Mayo"
+                break;
+            case 6:
+                nombreMes = " Junio"
+                break;
+            case 7: 
+                nombreMes = " Julio"
+                break;
+            case 8: 
+                nombreMes = " Agosto"
+                break;
+            case 9: 
+                nombreMes = " Septiembre"
+                break;
+            case 10: 
+                nombreMes = " Octubre"
+                break;
+            case 11: 
+                nombreMes = " Noviembre"
+                break;
+            case 12: 
+                nombreMes = " Diciembre"
+                break;
+        }
+        document.write("El mes ingresado es : " + nombreMes)
+    }else{
+        document.write ("El mes ingresado no es valido")
+    }
+
+
+        
+
+</script>
+</html>

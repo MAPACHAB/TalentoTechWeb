@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+/**
+     * Reto #4 - Lista de invitados
+        Estás organizando un banquete al que quieres invitar a tus amigos. 
+        Crea un programa que pida el nombre de uno de tus amigos, 
+        al hacerlo aumenta en uno una variable contadora, 
+        después pregunta si quieres invitar a alguien más: 
+        si la respuesta es afirmativa entonces pregunta por una persona más; 
+        en caso contrario cierra el ciclo y muestra en pantalla cuantos invitados son.
+    */
+        var nombre = prompt("Ingrese el nombre de tu amigo : ")
+        var contador = 1
+        var preguntarporotroAmigo = prompt(" Otro amigo?: ")
+
+        while(preguntarporotroAmigo == "SI" ){
+          nombre = prompt("Ingrese otro amigo : ")
+          contador ++
+          reguntarporotroAmigo = prompt(" otro amigo?: ")
+                }
+        document.write("La cantidad de amigos invitados son "  + contador)
+    
+</script>
+</html>
