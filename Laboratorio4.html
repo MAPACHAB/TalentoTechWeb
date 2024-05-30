@@ -18,8 +18,13 @@
         <!-- Este es un espacio -->
 
         <div>
-         <img class="imaescud" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Escudo_de_la_Universidad_Nacional_de_Colombia_%282016%29.svg/467px-Escudo_de_la_Universidad_Nacional_de_Colombia_%282016%29.svg.png"alert= "">
-       
+         <img class="imaescud" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Escudo_de_la_Universidad_Nacional_de_Colombia_%282016%29.svg/467px-Escudo_de_la_Universidad_Nacional_de_Colombia_%282016%29.svg.png" id = "escudo">
+            
+            <select onchange="CambiarTamanoEscudo(tamano)">
+             <option value="small"></option>
+             <option value="medium"></option>
+             <option value="large"></option>
+            </select>
         </div>
         
     </div>
@@ -99,9 +104,9 @@
         <br>
         <!-- Text Area -->
         <label for="">Descripcion del Perfil</label>
-        <textarea name="" id="" cols="50" rows="5" name="descripción"></textarea> <br>
+        <textarea name="" id="descripción" cols="50" rows="5" name="descripción"></textarea> <br>
         <label for="">Tipo documento</label>
-        <input list="documento" name="documento" id = tipodocumento>
+        <input list="documento" name="documento" id = "tipodocumento" >
         <!-- Datalist -->
         <datalist id="documento">
             <option value="Cedula">Cedula</option>
@@ -120,7 +125,7 @@
     <br>
     <label for="">Password</label>
         <!--cómo se coloca el id despues de placeholder o texto provisional/Genera error-->
-    <input type="password" requiered placeholder= >
+    <input type="password" >
     <br>
      <!--Campo de archivo  -->
      <label for="">Subir CV</label>
@@ -129,8 +134,8 @@
      <br>
 
          <!-- formulario  selección-->
-         <label for="">Ciudad</label>
-         <select name=" ciudad" id="">
+         <label for=" ">Ciudad</label>
+         <select name=" ciudad" id="ciudad">
              <option value=" Bogotá"> Bogotá</option>
              <option value=" Bucaramanga"> Bucaramaga</option>
              <option value=" Cucutá"> Cucuta</option>
@@ -271,10 +276,27 @@
         var tipodocumento = document.getElementById("tipodocumento").value
         var cedula = document.getElementById("cedula").value
       // cómo valido si en un solo campo tengo nobre y apellidos
-          if(nombre && apellidos){
-            alert("Los datos del formulario son: " + nombre + " " + apellidos)
-        }
+          if(nombre && telefono){
+            alert("Los datos del formulario son: " + nombre + " " + telefono + date +tipodocumento +  cedula)
+        
     }
+    }
+    function enviarFoCambiarTamanoEscudo(tamano){
+        var logo = document.getElementById("escudo")
+        console.log(tamano)
+        var tamanoEscudo = 0
+        if(tamano == "small"){
+            tamanoEscudo = 300
+        } else if(tamano == "medium"){
+            tamanoEscudo = 600
+        } else if(tamano == "large"){
+            tamanoEscudo = 900
+        }
+        //actualizo el tamaño del escudo
+        logo.with = tamanoEscudo
+    }
+
+
     // comentario prueba
     function saludar(){
         document.write("Hola <br>") 
@@ -287,9 +309,9 @@
     saludar()
     despedirse()
    
-    //subir los cambios al repositorio 1 escogo tre punticos 2 escojo + 3 agrego los 
-    //archivos que quiero subir con cambios 4 en elmensaje escribo cual fuel el cambio 
-    //5 en los tres puntos de refreacar archivo despliego y escogo pull push y push
+    //subir los cambios al repositorio 1 escojo tres punticos 2 escojo + 3 agrego los 
+    //archivos que quiero subir con cambios 4 en el mensaje escribo cual fuel el cambio 
+    //5 en los tres puntos de refrescar archivo despliego y escogo pull push y push
 
 </script>
 
