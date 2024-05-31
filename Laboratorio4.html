@@ -8,7 +8,7 @@
 <body id="body"> 
     <!--cambia el color del fondo de la pantalla/ definimos la funcion cambiarTema-->
     <div class="selector=tema"> 
-            <select name="" id="tema" onchange="cambiarTema()">
+            <select name="" id="tema"onchange="cambiarTema()">
                 <option value="light">Claro</option>
                 <option value="dark">Oscuro</option>
                 <option value="crazy">Frio</option>
@@ -20,11 +20,11 @@
         <div>
          <img class="imaescud" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Escudo_de_la_Universidad_Nacional_de_Colombia_%282016%29.svg/467px-Escudo_de_la_Universidad_Nacional_de_Colombia_%282016%29.svg.png" id = "escudo">
             
-            <select onchange="CambiarTamanoEscudo(tamano)">
-             <option value="small"></option>
-             <option value="medium"></option>
-             <option value="large"></option>
-            </select>
+            <select onchange="CambiarTamanoEscudo(value)">
+                <option value="small">Pequeño</option>
+                <option value="medium">Mediano</option>
+                <option value="large">Grande</option>
+           </select>
         </div>
         
     </div>
@@ -112,7 +112,7 @@
             <option value="Cedula">Cedula</option>
             <option value="Tarjeta de Identidad">Tarjeta de Identidad</option>           
         </datalist> <br>
-        <label for="">Cedula</label>
+        <label for="">Numero de documento</label>
         <input type="text" name="Cedula" id= "Cedula">
    
         <!--Campo de Email  -->
@@ -144,7 +144,8 @@
          </select> 
         </fieldset>
         <!-- Button -->
-        <button>Enviar</button>
+        <button onclick="enviarFormulario()"> Enviar</button>
+
      </form>
     <!-- Tabla de ventas -->
     <h1> Ventas del año 2023</h1>
@@ -248,7 +249,7 @@
 </body>
 <script>
     //creamos la funcion cambiarTema
-        function cambiarTema(){
+    function cambiarTema(){
         //accedemos al id del body y todo lo que tiene dentro
         var body = document.getElementById("body")
         //con el value toma el tema oscuro, claro o frio
@@ -272,16 +273,16 @@
         var nombre = document.getElementById("nombres").value
         var telefono = document.getElementById("telefono").value
         var date = document.getElementById("date").value
-        var telefono = document.getElementById("Teléfono").value
         var tipodocumento = document.getElementById("tipodocumento").value
-        var cedula = document.getElementById("cedula").value
+        var cedula = document.getElementById("Cedula").value
       // cómo valido si en un solo campo tengo nobre y apellidos
+      // puedo desabilitar esta parte pra verlo en pantalla y hacer una depuracion en el código
           if(nombre && telefono){
-            alert("Los datos del formulario son: " + nombre + " " + telefono " " + date " " + tipodocumento " " +  cedula)
+            alert("Los datos del formulario son: " + nombre +" " + telefono + " " + date +" " + tipodocumento +" " +  cedula)
         
     }
     }
-    function enviarFoCambiarTamanoEscudo(tamano){
+    function CambiarTamanoEscudo(tamano){
         var logo = document.getElementById("escudo")
         console.log(tamano)
         var tamanoEscudo = 0
@@ -293,7 +294,7 @@
             tamanoEscudo = 900
         }
         //actualizo el tamaño del escudo
-        logo.with = tamanoEscudo
+        logo.style.width = tamanoEscudo + "px"
     }
 
 

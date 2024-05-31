@@ -1,0 +1,89 @@
+[
+    {
+        "nombre": "Leonel",
+        "apellido": "Messi",
+        "edad": 34,
+        "mascota": [
+            {
+                "nombre": "Firulais",
+                "tipo": "perro"
+            },
+            {
+                "nombre": "Pepe",
+                "tipo": "Loro"
+            }
+
+        ]
+
+    },
+    {
+        "nombre": "Radamel",
+        "apellido": "Falcao",
+        "edad": 34,
+        "mascota": [
+            {
+                "nombre": "lola",
+                "tipo": "gato"
+            },
+            {
+                "nombre": "Ramon",
+                "tipo": "Ardilla"
+            }
+
+        ]
+
+    },
+
+    {
+        "departamento": "norte de santader",
+        "ciudad": "cucuta",
+        "barrio": "esperanza",
+        "Clima": [
+            {
+                "temperatura": "40 Grados",
+                "presipitaciones": "peluvias"
+            },
+            {
+                "viento ": "5 kilometros por hora",
+            }
+
+        ]
+
+    },
+
+    {
+        "supermercado": "merke",
+        "pasillo": "bebidas",
+        "pasillo": "cereales",
+        "cantidad": [
+            {
+                "cerveza": 80,
+                "vino": 200,
+                "gaseosas": 50,
+            },
+            {
+                "hojuelas": "azucarada",
+                "hujuela": "dulce"
+            }
+
+        ]
+
+    },
+    {
+        "universidad": "unal",
+        "sede": "bogota",
+        
+        "facultades": [
+            {
+                "medicina": "fonoaudiologia",
+                "economía": "administracion"
+            },
+            {
+                "jornada": "diruna",
+            }
+
+        ]
+
+    },
+    
+]
