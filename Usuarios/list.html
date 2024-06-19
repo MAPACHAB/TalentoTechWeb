@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Correo</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="Usuarios">
+
+        </tbody>
+    </table> 
+    
+</body>
+<script>
+    //ejecutar una accion cuando carga la pagina
+    document.addEventListener('DOMContentLoaded', function(){
+         fetch('http://localhost:3000/usuario/')
+        .then(response => response.json())//lo convierte en formato json
+        .then(data => { //guarda la informcion en la variable data
+            //accedemos a la etiqueta que va a mostar los datos
+            const tableBody = document.getElementById('Usuarios')
+            //Recorremos cada uno de los elementos que trae el servicio el foreach repote el for para cada elemento que se tenga data
+            //user guarda todos los elementos de la lista esejemplo use toma el nombre de james luego luis etc 
+            data.forEach(user => {
+                    //creamos una etiqueta <tr> usando json
+                    const row = document.createElement('tr')
+                     //creamos una etiqueta <tr> usando json
+                    const nombre = document.createElement('td')
+                    //agregamos el valor a  la etiqueta
+                    nombre.textContent = user.nombre
+                    //agragamos el <td> al <tr>
+                    row.appendChild(nombre)
+
+                    const apellidos = document.createElement('td')
+                    //agregamos el valor a  la etiqueta
+                    apellidos.textContent = user.apellidos
+                    //agragamos el <td> al <tr>
+                    row.appendChild(apellidos)
+
+                    const correo = document.createElement('td')
+                    //agregamos el valor a  la etiqueta
+                    correo.textContent = user.correo
+                    //agragamos el <td> al <tr>
+                    row.appendChild(correo)
+
+                    const acciones = document. createElement('td')
+                    const editar = document.createElement ('a')
+                    editar.textContent = 'Editar'
+
+                    const eliminar = document.createElement('button') // Creamos la etiqueta button
+                    eliminar.textContent = 'Eliminar' // Agregamos el texto al boton
+                    eliminar.addEventListener('click', function(){ // Creamos un evento al dar click
+                    const textoConfirmacion = '¿Esta seguro que desea eliminar a ' + user.nombre +'?'
+                    if(confirm(textoConfirmacion)){ // Mostramos un mensaje de confirmacion
+                        eliminarUsuario(user._id, row) // Llamamos la funcion para eliminar
+                        }
+                    })
+
+                    acciones.appendChild(editar)
+                    acciones.appendChild(eliminar)
+                    row.appendChild(acciones) //agragamos la acciones al parte row
+
+                    //AGREGAMOS EL <tr> a la tabla
+                    tableBody.appendChild(row)             
+            })
+        })
+
+    })
+    //funcion para elimimar un usuario, pasandole el id
+    function eliminarUsuario(id, row){
+        //Esta es la Url de eliminacion, por ejemplo 
+        //http://localhost:3000/usuario/ mas el id de cualquier usuario
+        const deleteUr1 = 'http://localhost:3000/usuario/' +id
+        fetch(deleteUr1, {
+            method: 'DELETE' //defino el metodo a utilizar
+        })
+        .then(response => {
+            if(response.status == 200){ //valido que sea exitosa
+                row.remove() //elimino el usuario de la lista 
+                alert('Usuario eliminado correctamente') //muestro el mensaje de confirmacion
+            }else{
+                alert('Error al eliminar usuario') //muestro el mensaje de error
+            }
+        })
+        .catch( error => console.log( 'Error:', error))
+    }
+
+
+</script>
+</html>

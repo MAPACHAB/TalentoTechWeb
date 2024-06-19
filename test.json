@@ -38,28 +38,29 @@
         "departamento": "norte de santader",
         "ciudad": "cucuta",
         "barrio": "esperanza",
+        "casado": false,
         "Clima": [
             {
                 "temperatura": "40 Grados",
-                "presipitaciones": "peluvias"
+                "presipitaciones": "Fluvias"
+                
             },
             {
-                "viento ": "5 kilometros por hora",
+                "viento ": "5 kilometros por hora"
             }
 
         ]
-
     },
 
     {
         "supermercado": "merke",
         "pasillo": "bebidas",
-        "pasillo": "cereales",
+        "area": "cereales",
         "cantidad": [
             {
                 "cerveza": 80,
                 "vino": 200,
-                "gaseosas": 50,
+                "gaseosas": 50
             },
             {
                 "hojuelas": "azucarada",
@@ -79,11 +80,11 @@
                 "economía": "administracion"
             },
             {
-                "jornada": "diruna",
+                "jornada": "diruna"
             }
 
         ]
 
-    },
+    }
     
 ]
