@@ -44,9 +44,9 @@ document.addEventListener('DOMContentLoaded', function() {
             password: document.getElementById('password').value
       }
        if(searchParams.has('id')){ //si llega un Id en la URL Actualizamos
-         submitForm(data, "http://localhost:3000/usuario/" +id,"PUT")
+         submitForm(data, "https://nodejs-marta.vercel.app/usuario/" +id,"PUT")
     }else{
-        submitForm(data, "http://localhost:3000/usuario/", "POST")
+        submitForm(data, "https://nodejs-marta.vercel.app/usuario/", "POST")
     }
   })
     //obtenemos el id de la url //pasamos esta linea arriba para usarla en la condicion del submit
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if(searchParams.has('id')){
      // const id = searchParams.get("id")//asignamos el id a una variable //pasamos esta linea arriba
       //con fetch consultamos la informacion del usuario que que tiene ese id
-       fetch('http://localhost:3000/usuario/'+id)
+       fetch('https://nodejs-marta.vercel.app/usuario/'+id)
       .then(response => response.json())//lo convierte en formato json
       .then(data => {
           //asignamos la información al formulario 

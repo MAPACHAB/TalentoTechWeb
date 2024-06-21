@@ -6,11 +6,11 @@
         "use": "@vercel/static"
       },
       {
-        "src": "/usuarios/list.html",
+        "src": "/Usuarios/list.html",
         "use": "@vercel/static"
       },
       {
-        "src": "/usuarios/create.html",
+        "src": "/Usuarios/create.html",
         "use": "@vercel/static"
       }
     ],
@@ -20,12 +20,12 @@
         "dest": "/index.html"
       },
       {
-        "src": "/usuarios",
-        "dest": "/usuarios/list.html"
+        "src": "/Usuarios",
+        "dest": "/Usuarios/list.html"
       },
       {
         "src": "/create",
-"dest": "/usuarios/create.html"
+"dest": "/Usuarios/create.html"
       }
 ]
   }

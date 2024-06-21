@@ -27,7 +27,7 @@
 <script>
     //ejecutar una accion cuando carga la pagina
     document.addEventListener('DOMContentLoaded', function(){
-         fetch('http://localhost:3000/usuario')
+         fetch('https://nodejs-marta.vercel.app/usuario')
         .then(response => response.json())//lo convierte en formato json
         .then(data => { //guarda la informcion en la variable data
             //accedemos a la etiqueta que va a mostar los datos
@@ -88,7 +88,7 @@
     function eliminarUsuario(id, row){
         //Esta es la Url de eliminacion, por ejemplo 
         //http://localhost:3000/usuario/ mas el id de cualquier usuario
-        const deleteUr1 = 'http://localhost:3000/usuario' +id
+        const deleteUr1 = 'https://nodejs-marta.vercel.app/usuario' +id
         fetch(deleteUr1, {
             method: 'DELETE' //defino el metodo a utilizar
         })
