@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src= "../assets/loadNavbar.js"></script>
+    <div id="navbar"> </div> 
+   
 </head>
 <body>
-    <table>
+    <table class = "table table-striped"> 
         <thead>
             <tr>
                 <th>Nombre</th>
@@ -24,7 +27,7 @@
 <script>
     //ejecutar una accion cuando carga la pagina
     document.addEventListener('DOMContentLoaded', function(){
-         fetch('http://localhost:3000/usuario/')
+         fetch('http://localhost:3000/usuario')
         .then(response => response.json())//lo convierte en formato json
         .then(data => { //guarda la informcion en la variable data
             //accedemos a la etiqueta que va a mostar los datos
@@ -56,9 +59,14 @@
                     const acciones = document. createElement('td')
                     const editar = document.createElement ('a')
                     editar.textContent = 'Editar'
+                    editar.href = './create.html?id='+user._id
+                    editar.classList.add('btn', 'btn-warning'); //color a los botones con las librerias CSS
+
 
                     const eliminar = document.createElement('button') // Creamos la etiqueta button
                     eliminar.textContent = 'Eliminar' // Agregamos el texto al boton
+                    eliminar.classList.add('btn', 'btn-danger'); //color a los botones on las librerias CSS
+
                     eliminar.addEventListener('click', function(){ // Creamos un evento al dar click
                     const textoConfirmacion = '¿Esta seguro que desea eliminar a ' + user.nombre +'?'
                     if(confirm(textoConfirmacion)){ // Mostramos un mensaje de confirmacion
@@ -80,7 +88,7 @@
     function eliminarUsuario(id, row){
         //Esta es la Url de eliminacion, por ejemplo 
         //http://localhost:3000/usuario/ mas el id de cualquier usuario
-        const deleteUr1 = 'http://localhost:3000/usuario/' +id
+        const deleteUr1 = 'http://localhost:3000/usuario' +id
         fetch(deleteUr1, {
             method: 'DELETE' //defino el metodo a utilizar
         })
